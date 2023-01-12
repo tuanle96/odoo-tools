@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+# set server timezone in UTC before time module imported
+import odoo_tools
+__import__('os').environ['TZ'] = 'Asia/Ho_Chi_Minh'
+
+if __name__ == "__main__":
+    odoo_tools.cli.main()
